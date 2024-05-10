@@ -1,0 +1,45 @@
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: white; /* Text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  padding: 5px;
+  background-image: url('aurora.jpg'); /* Background image */
+  background-size: cover; /* Scale background image to cover entire header */
+  background-position: center; /* Center the background image */
+}
+
+  
+.header-title h1 {
+ font-size: 3rem; /* Adjust font size as needed */
+ margin-bottom: 20px; /* Adjust spacing between title and subtitle */
+}
+
+.header-quote p {
+  font-size: 1rem; /* Adjust font size as needed */
+  font-style: italic;
+  margin-bottom: 30px
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.para-section {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 60%; /* Adjust the width of your content */
+  max-width: 1200px; /* Optional: Set maximum width */
+  margin: 0 auto; /* Center the content horizontally */
+  /* Additional styling for your content */
+  padding: 20px; /* Add padding for spacing */
+}
+
+
