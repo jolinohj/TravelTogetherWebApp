@@ -9,7 +9,7 @@ body, html {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   padding: 5px;
-  background-image: url('aurora.jpg'); /* Background image */
+  background-image: url('./Images/aurora.jpg'); /* Background image */
   background-size: cover; /* Scale background image to cover entire header */
   background-position: center; /* Center the background image */
 }
