@@ -1,83 +1,188 @@
-body, html {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.header {
-  color: white; /* Text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow */
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2905682d; /* Change this to your desired background color */
+}
+
+.title-banner {
+  background-image: url('Images/aurora.jpg');
+  background-size: cover;
   text-align: center;
-  padding: 5px;
-  background-image: url(Images/aurora.jpg); /* Background image */
-  background-size: cover; /* Scale background image to cover entire header */
-  background-position: center; /* Center the background image */
-}
-
+  padding: 80px 0;
+  color: white;
+  margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
+  margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
   
-.header-title h1 {
- font-size: 3rem; /* Adjust font size as needed */
- margin-bottom: 20px; /* Adjust spacing between title and subtitle */
 }
 
-.header-quote p {
-  font-size: 1rem; /* Adjust font size as needed */
-  font-style: italic;
-  margin-bottom: 30px
+.title-banner h1 {
+  margin: 0;
+  font-size: 60px; /* Adjust this value to increase font size */
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
+.title-banner p {
+  margin: 0;
+  font-size: 30px; /* Adjust this value to increase font size */
+}
 
-.container {
+.navigation-pane {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: #450fc415;
+  margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
+  margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
 }
 
-.para-section {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  width: 60%; /* Adjust the width of your content */
-  max-width: 1200px; /* Optional: Set maximum width */
-  margin: 0 auto; /* Center the content horizontally */
-  /* Additional styling for your content */
-  padding: 20px; /* Add padding for spacing */
+.navigation-pane button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
 }
 
-/* Button Design */
-.about-button {
-  background-color: #4CAF50; /* Green background */
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  padding: 15px 32px; /* Some padding */
-  text-align: center; /* Centered text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Make the container an inline-block element */
-  font-size: 16px; /* Increase font size */
-  margin: 4px 2px; /* Some margin */
-  cursor: pointer; /* Pointer/hand icon on hover */
-  border-radius: 8px; /* Rounded corners */
-  transition: background-color 0.3s ease; /* Smooth transition for background color */
+.navigation-pane button:hover {
+  background-color: #0056b3;
 }
 
-/* Button hover effect */
-.about-button:hover {
-  background-color: #469e4b; /* Darker green */
+
+.introduction {
+  background-color: #450fc415;
+  margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
+  margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
 }
 
-/* Button focus effect */
-.about-button:focus {
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 5px 2px rgba(0, 150, 136, 0.5); /* Add a custom shadow */
+.approach {
+  background-color: #450fc415;
+  margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
+  margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
 }
 
-/* Button active effect */
-.about-button:active {
-  background-color: #265528; /* Even darker green */
+.introduction h2{
+  max-width: calc(1000px - 20px); /* Adjusted to match the combined width of the cards */
+  margin: auto;
+  padding: 10px;
+  font-size: 30px;
+  text-align: left;
+  background-color: #ffffff00; /* Change color of the introduction paragraph */
 }
 
-/* Responsive button */
-@media (max-width: 600px) {
-  .about-button {
-      width: 100%; /* Full width on small screens */
+.introduction p{
+  max-width: calc(1000px - 20px); /* Adjusted to match the combined width of the cards */
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+  text-align: left;
+  background-color: #ffffff00; /* Change color of the introduction paragraph */
+}
+
+.approach h2{
+  max-width: calc(1000px - 20px); /* Adjusted to match the combined width of the cards */
+  margin:auto;
+  padding: 10px;
+  font-size: 28x;
+  text-align: left;
+  background-color: #ffffff00; /* Change color of the introduction paragraph */
+}
+
+.approach p{
+  max-width: calc(1000px - 20px); /* Adjusted to match the combined width of the cards */
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+  text-align: left;
+  background-color: #ffffff00; /* Change color of the introduction paragraph */
+}
+
+.card-section {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.card {
+  background-color: white;
+  border: 5px dotted #500d8b;
+  padding: 20px;
+  border-radius: 20px; /* Adjust the value to control the roundness of the corners */
+  text-align: left; /* Align descriptions to the left */
+  text-justify: auto; /* Justify text within the width of the cards */
+  width: 30%;
+}
+
+.card h3{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.card ol{
+  margin-left: 20px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+
+.card p{
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.start-section {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.start-button {
+  background-color: green;
+  color: white;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 50%;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: darkgreen;
+}
+
+.footer {
+  color: rgb(19, 18, 18);
+  text-align: left;
+  font-size: 10px;
+  padding: 20px 0;
+  margin-bottom: 100px;
+  max-width: 1000px; /* Set the max width to match the width of other sections */
+  margin: 0 auto; /* Center the footer */
+
+}
+
+@media (max-width: 768px) {
+  .card-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 80%;
+      margin-bottom: 20px;
   }
 }
-

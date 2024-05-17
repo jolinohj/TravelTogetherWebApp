@@ -1,127 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+
+<!-- [START] METADATA & DEPENDENCIES -->
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Together</title>
+    <title>Webpage Example</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+<!-- [END] METADATA & DEPENDENCIES -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+<!-- [START] CONTENT & STRUCTURE-->
+<header class="title-banner">
+    <h1> Welcome to "TourGether" </h1>
+    <p class="header.quote"> “A journey well shared is a journey well enjoyed.” -Anonymous </p>
+</header>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<nav class="navigation-pane">
+    <button onclick="location.href='page1.html'">About</button>
+    <button onclick="location.href='Public/contact.html'">Contact</button>
+</nav>
 
+<section class="introduction">
+    <h2>Introduction</h2>
+    <p>Planning a trip can be time-consuming and challenging, particularly when trying to accommodate everyone's preferences. </p>
 
-</head>
-<body>
-<!-- Start of Header Section -->
-    <header class="header">
-        <div class="header-title">
-            <h1>Let's go...<br/>
-                TRAVEL TOGETHER!</h1>
-
-        <div class="header-quote">
-            <p>“A journey well shared is a journey well enjoyed.” -Anonymous</p>
-
-    </header>
-    <!-- End of Header Section -->
-
-<!-- Start of Navigation Pane -->
-<ul class="nav justify-content-center">
-    <li class="nav-item">
-      <a class="nav-link active" aria-current="page" href='Public/about.html'>About</a>
-    </li>
-
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href='Public/contact.html'>Contact Me</a>
-      </li>
-</ul>
-<!-- End of Navigation Pane -->
-
-<!-- Start of Cards -->
-<div class="container">
-    <div class="row justify-content-center">
-      <div class="col">
-        <div class="card">
-            <div class="card" style="width: 18rem;">
-                <img src="Images/inputcat.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Step 1: Answer these questions:</h5>
-                  <p class="card-text">  
-                    1) Location - where are you going?<br/>
-                    2) Duration - for how long? <br/>
-                    3) Group size - how many people?<br/>
-                    <br/>
-                  </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div><!-- Card content goes here -->
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-            <div class="card" style="width: 18rem;">
-                <img src="Images/catyes.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Step 2: Rank'em!</h5>
-                  <p class="card-text">Each member will rank the places/activities he/she wants to go.do.<br/>
-                    <br/>
-                    <br/>
-                </p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div> <!-- Card content goes here -->
-        </div>
-      </div>
-      <div class="col">
-        <div class="card">
-            <div class="card" style="width: 18rem;">
-                <img src="Images/catheart.jpeg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Step 3: Populate your itinerary!</h5>
-                  <p class="card-text"> Based on what each member has selected, AI will generat the collective results and you can populate your itinerary.<br/>
-                  </p>
-                  <a href="" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div><!-- Card content goes here -->
-        </div>
-      </div>
-    </div>
-  </div>
-  
-<!-- End of Cards -->
-
+    <p>TourGether - a word pun combining "Tour" and "Together", is a web app designed to help a group come to a <strong>consensus on travel destinations</strong>. <br/><br/>
     
-    <div class="container">
-        <div class="para-section">
-        <h1>About this website</h2>
-        <p>Planning a trip can be time-consuming and challenging, particularly when trying to accommodate everyone's preferences.</p>
-      
-        <p>Travel Together is a web app designed to help a group come to a <strong>consensus on travel destinations</strong>. Hopefully this app will help create a more enjoyable, efficient, and harmonious group travel experience for everyone!</p>
+        I hope that with the help of this web app, your travel expereiences (in a group setting) will be more harmonious and enjoyable.
+    </p>
+</section>
 
-        <br/>
-        <h2>Step 1</h2>
-        <p> Input the following:
-            <ul>
-                <li>Country</li>
-                <li>Duration of Stay</li>
-                <li>Number of travellers</li>
-            </ul>
+<section class="approach">
+<h2>Let's get started!</h2>
+    <p> There are just 3 steps to follow. Refer to the 3 tiles below on what they are then hit the "START" button at the bottom of the page to try it out! </p>
+</section>
 
-        <h2>Step 2</h2>
-        <p>Select x number of places from list of recommended locations and rank them!</p>
-
-        <h2>Step 3</h2>
-        <p> Insert the shortlisted final places into the planner and adjust accordinglt</p>
-
-        </div>
+<section class="card-section">
+    <div class="card">
+        <img src="Images/inputcat.jpeg" alt="Image 1">
+        <h3>Step 1: Answer these questions:</h3>
+            <ol>
+                <li>Location - where are you going?</li>
+                <li>Duration - for how long? </li>
+                <li>Group size - how many people?</li>
+            </ol>
+        </p>
     </div>
+    <div class="card">
+        <img src="Images/catyes.jpeg" alt="Image 2">
+        <h3>Step 2: Rank'em!</h3>
+        <p>Each member will rank the places/activities he/she wants to go.do.</p>
     </div>
-   
-<button onclick="sayHello()">This is a button</button>
+    <div class="card">
+        <img src="Images/catheart.jpeg" alt="Image 3">
+        <h3>Step 3: Populate your itinerary!</h3>
+        <p>Based on what each member has selected, AI will generat the collective results and you can populate your itinerary</p>
+    </div>
+</section>
+
+<section class="start-section">
+    <button class="start-button" onclick="location.href='start.html'">START</button>
+</section>
+
+
+<footer class="footer">
+    <p> &copy; 2024 JolinOng. All rights reserved.<br/>
+        This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
+</footer>
 </body>
 </html>
