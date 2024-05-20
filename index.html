@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- [START] METADATA & DEPENDENCIES -->
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpage Example</title>
+    <title>TourGether!</title>
     <link rel="stylesheet" href="style.css">
-<!-- [END] METADATA & DEPENDENCIES -->
 
-<!-- [START] CONTENT & STRUCTURE-->
-<header class="title-banner">
-    <h1> Welcome to "TourGether" </h1>
-    <p class="header.quote"> “A journey well shared is a journey well enjoyed.” -Anonymous </p>
-</header>
+    <!-- Link to Google Font (title banner) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Titan+One&family=Zeyada&display=swap" rel="stylesheet">
 
+    <!-- Link to Google Font (rest) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Special+Elite&family=Titan+One&family=Zeyada&display=swap" rel="stylesheet">
+
+
+<!-- NAVIGATION PANE-->
 <nav class="navigation-pane">
-    <button onclick="location.href='page1.html'">About</button>
-    <button onclick="location.href='Public/contact.html'">Contact</button>
+    <button onclick="location.href='page1.html'">ABOUT</button>
+    <button onclick="location.href='page3.html'">DESTINATIONS</button>
+    <button onclick="location.href='Public/contact.html'">CONTACT</button>
 </nav>
 
-<section class="introduction">
-    <h2>Introduction</h2>
-    <p>Planning a trip can be time-consuming and challenging, particularly when trying to accommodate everyone's preferences. </p>
+<!-- TITLE BANNER-->
+<header class="title-banner">
+    <h1> TourGether </h1>
+    <p> “A journey well shared is a journey well enjoyed.” -Anonymous </p>
+</header>
 
-    <p>TourGether - a word pun combining "Tour" and "Together", is a web app designed to help a group come to a <strong>consensus on travel destinations</strong>. <br/><br/>
-    
-        I hope that with the help of this web app, your travel expereiences (in a group setting) will be more harmonious and enjoyable.
+<!-- INTRODUCTION-->
+<section class="introduction">
+    <h2>WELCOME!</h2>
+        <p>Planning a trip can be time-consuming and challenging, particularly when trying to accommodate everyone's preferences. </p>
+
+         <p>TourGether - a word pun combining "Tour" and "Together", is a web app designed to help a group come to a <strong>consensus on travel destinations</strong>.  I hope that with the help of this web app, your travel expereiences (in a group setting) will be more harmonious and enjoyable.
     </p>
 </section>
 
 <section class="approach">
-<h2>Let's get started!</h2>
-    <p> There are just 3 steps to follow. Refer to the 3 tiles below on what they are then hit the "START" button at the bottom of the page to try it out! </p>
+    <h2>Let's get started~</h2>
+        <p> There are just 3 steps to follow. Refer to the 3 tiles below on what they are then hit the "START" button at the bottom of the page to try it out! </p>
 </section>
 
+<!-- CARDS-->
 <section class="card-section">
     <div class="card">
         <img src="Images/inputcat.jpeg" alt="Image 1">
-        <h3>Step 1: Answer these questions:</h3>
+        <h3><mark>Step 1:</mark> Answer these questions:</h3>
             <ol>
                 <li>Location - where are you going?</li>
                 <li>Duration - for how long? </li>
@@ -47,24 +58,58 @@
     </div>
     <div class="card">
         <img src="Images/catyes.jpeg" alt="Image 2">
-        <h3>Step 2: Rank'em!</h3>
+        <h3><mark>Step 2:</mark> Rank'em!</h3>
         <p>Each member will rank the places/activities he/she wants to go.do.</p>
     </div>
     <div class="card">
         <img src="Images/catheart.jpeg" alt="Image 3">
-        <h3>Step 3: Populate your itinerary!</h3>
+        <h3><mark>Step 3:</mark> Populate your itinerary!</h3>
         <p>Based on what each member has selected, AI will generat the collective results and you can populate your itinerary</p>
     </div>
 </section>
 
 <section class="start-section">
-    <button class="start-button" onclick="location.href='start.html'">START</button>
+    <button class="start-button">START</button>
 </section>
-
 
 <footer class="footer">
     <p> &copy; 2024 JolinOng. All rights reserved.<br/>
         This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
 </footer>
+
+    <!-- Popup form -->
+    <div id="popupForm" class="popup-form">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Please answer the following questions:</h2>
+            <form id="questionsForm">
+                <label for="question1">Question 1:</label>
+                <select id="question1">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+
+                <label for="question2">Question 2:</label>
+                <select id="question2">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+
+                <label for="question3">Question 3:</label>
+                <select id="question3">
+                    <option value="option1">Option 1</option>
+                    <option value="option2">Option 2</option>
+                    <option value="option3">Option 3</option>
+                </select>
+
+                <button type="button" onclick="submitAnswers()">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

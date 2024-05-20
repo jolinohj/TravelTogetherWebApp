@@ -1,6 +1,26 @@
-var guestname = prompt("Hello! What is your name?");
-var firstChar = guestname.slice(0,1);
-var restChar = guestname.slice (1,guestname.length)
-var uppercase_firstChar = firstChar.toUpperCase();
-var uppercase_restChar = restChar.toLowerCase();
-alert("Hi " + uppercase_firstChar + uppercase_restChar + "!" + "  Thank you for visiting my first webpage :)" + "  My web app aims to streamline the way people travelling in a group plan their trip - hope you find it useful!");
+function openPopup() {
+    document.getElementById('popupForm').style.display = 'block';
+}
+
+function closePopup() {
+    document.getElementById('popupForm').style.display = 'none';
+}
+
+function submitAnswers() {
+    const question1 = document.getElementById('question1').value;
+    const question2 = document.getElementById('question2').value;
+    const question3 = document.getElementById('question3').value;
+
+    const answers = {
+        question1: question1,
+        question2: question2,
+        question3: question3
+    };
+
+    console.log('Answers:', answers); // Store the answers for further use, e.g., sending to ChatGPT.
+
+    // Close the popup
+    closePopup();
+
+    // You can now send the answers to your backend or use them as needed.
+}

@@ -5,69 +5,94 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400
+  font-weight: 400;
   margin: 0;
   padding: 0;
-  background-color: #2905682d; /* Change this to your desired background color */
-}
+  }
 
 .title-banner {
-  background-image: url('Images/aurora.jpg');
+  background-image:url('Images/sky.jpg');
   background-size: cover;
   text-align: center;
-  padding: 80px 0;
-  color: white;
+  padding: 10px 0;
+  color: rgb(36, 6, 87);
   margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
   margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
-  
 }
 
 .title-banner h1 {
   margin: 0;
-  font-size: 60px; /* Adjust this value to increase font size */
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-  font-weight: bold;
-  margin-bottom: 20px;
+  font-size: 100px; /* Adjust this value to increase font size */
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  margin: 20px;
+
 }
 
 .title-banner p {
-  margin: 0;
-  font-size: 30px; /* Adjust this value to increase font size */
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  background-color: #b0d4f094;
+  margin-bottom: 20px;
+  margin-left:100px;
+  margin-right:100px;
+
+
+  font-size: 28px; /* Adjust this value to increase font size */
 }
 
 .navigation-pane {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
-  background-color: #450fc415;
+  background-color: #5ea3ff;
+ 
   margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
   margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
 }
 
 .navigation-pane button {
-  margin: 0 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 20px;
+  margin: 25px;
   padding: 10px 20px;
   border: none;
+  border-radius: 20px;
   background-color: #007BFF;
   color: white;
   cursor: pointer;
+ 
 }
 
 .navigation-pane button:hover {
   background-color: #0056b3;
 }
 
-
 .introduction {
-  background-color: #450fc415;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color:aliceblue;
+  color: #333; /* Ensure text color is readable against the gradient */
   margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
   margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
 }
 
 .approach {
-  background-color: #450fc415;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color:aliceblue;
+  color: #333; /* Ensure text color is readable against the gradient */
   margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
-  margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
+  margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */;
+  padding-bottom: 20px;
 }
 
 .introduction h2{
@@ -83,16 +108,16 @@ body {
   max-width: calc(1000px - 20px); /* Adjusted to match the combined width of the cards */
   margin: auto;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: left;
   background-color: #ffffff00; /* Change color of the introduction paragraph */
 }
 
 .approach h2{
   max-width: calc(1000px - 20px); /* Adjusted to match the combined width of the cards */
-  margin:auto;
+  margin: auto;
   padding: 10px;
-  font-size: 28x;
+  font-size: 30px;
   text-align: left;
   background-color: #ffffff00; /* Change color of the introduction paragraph */
 }
@@ -101,7 +126,7 @@ body {
   max-width: calc(1000px - 20px); /* Adjusted to match the combined width of the cards */
   margin: auto;
   padding: 10px;
-  font-size: 15px;
+  font-size: 18px;
   text-align: left;
   background-color: #ffffff00; /* Change color of the introduction paragraph */
 }
@@ -109,8 +134,9 @@ body {
 .card-section {
   display: flex;
   justify-content: space-around;
-  margin: 20px auto;
+  margin: 0 auto;
   max-width: 1000px;
+  background-color:aliceblue;
 }
 
 .card {
@@ -129,12 +155,18 @@ body {
 }
 
 .card ol{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-left: 20px;
   margin-bottom: 20px;
   font-size: 15px;
 }
 
 .card p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 10px;
   font-size: 15px;
 }
@@ -147,31 +179,46 @@ body {
 
 .start-section {
   text-align: center;
-  margin: 100px 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color:aliceblue;
+  margin-left: calc((100% - 1000px) / 2); /* Adjust margin to center */
+  margin-right: calc((100% - 1000px) / 2); /* Adjust margin to center */
 }
 
 .start-button {
-  background-color: green;
+  background: linear-gradient(to bottom, #28a745, #218838); /* Gradient background for 3D effect */
   color: white;
-  padding: 20px 40px;
+  padding: 50px 40px;
   border: none;
   border-radius: 50%;
-  font-size: 50px;
+  font-size: 24px;
   cursor: pointer;
+  box-shadow: 0 5px #1e7e34, 0 5px 10px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+  transition: all 0.2s ease; /* Smooth transition for the hover effect */
 }
 
 .start-button:hover {
-  background-color: darkgreen;
+  background: linear-gradient(to bottom, #218838, #1e7e34);
+  box-shadow: 0 2px #1e7e34, 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(5px); /* Push button down on hover */
+}
+
+.start-button:active {
+  box-shadow: 0 1px #1e7e34, 0 1px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(4px); /* Further push button down on active */
 }
 
 .footer {
-  color: rgb(19, 18, 18);
+  color: rgb(247, 237, 237);
   text-align: left;
-  font-size: 10px;
-  padding: 20px 0;
-  margin-bottom: 100px;
+  font-size: 15px;
+  padding: 100px 0;
+  margin: auto;
+  padding: 10px;
   max-width: 1000px; /* Set the max width to match the width of other sections */
   margin: 0 auto; /* Center the footer */
+  background-color:#5ea3ff;
 
 }
 
@@ -185,4 +232,88 @@ body {
       width: 80%;
       margin-bottom: 20px;
   }
+}
+
+/* Popup form styling */
+.popup-form {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
+  z-index: 1;
+}
+
+.popup-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.popup-content h2 {
+  margin-top: 0;
+}
+
+.popup-content label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.popup-content select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.popup-content button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #0056b3;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card-section {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .card {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+}
+
+mark {
+  background-color: yellow; /* Default highlight color */
+  color: black; /* Text color to ensure readability */
+  padding: 0 2px; /* Optional: Add some padding for better appearance */
+  border-radius: 2px; /* Optional: Add some rounding to the corners */
 }
