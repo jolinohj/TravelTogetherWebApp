@@ -47,7 +47,7 @@
 <!-- CARDS-->
 <section class="card-section">
     <div class="card">
-        <img src="Images/inputcat.jpeg" alt="Image 1">
+        <img src="Images/catfamily.png" alt="Image 1">
         <h3><mark>Step 1:</mark> Answer these questions:</h3>
             <ol>
                 <li>Location - where are you going?</li>
@@ -57,52 +57,46 @@
         </p>
     </div>
     <div class="card">
-        <img src="Images/catyes.jpeg" alt="Image 2">
+        <img src="Images/yesorno.jpeg" alt="Image 2">
         <h3><mark>Step 2:</mark> Rank'em!</h3>
-        <p>Each member will rank the places/activities he/she wants to go.do.</p>
+        <p> <br/> Each member will take turns ranking the places/activities he/she wants to go/do from a list. </p>
     </div>
     <div class="card">
-        <img src="Images/catheart.jpeg" alt="Image 3">
+        <img src="Images/happy-cat.gif" alt="Image 3">
         <h3><mark>Step 3:</mark> Populate your itinerary!</h3>
-        <p>Based on what each member has selected, AI will generat the collective results and you can populate your itinerary</p>
-    </div>
+        <p>The application will consolidate everyone's selection and generate the results. You can then populate them into your itinerary!</p>
+    </div>  
 </section>
 
-<section class="start-section">
-    <button class="start-button">START</button>
-</section>
+<!-- START BUTTON -->
+<div class="start-section">
+    <button class="start-button" onclick="openPopup()">START</button>
+</div>
 
+<!-- FOOTER -->
 <footer class="footer">
-    <p> &copy; 2024 JolinOng. All rights reserved.<br/>
+    <p> &copy; 2024 Jolin Ong. All rights reserved.<br/>
         This website is created for learning purposes only. The information provided here should not be considered professional advice. Please note that we make no guarantees regarding the accuracy, completeness, or reliability of the contents of this website. Any actions you take based on the contents of this website are at your own risk. We are not liable for any losses or damages incurred from the use of this website.</p>
 </footer>
 
-    <!-- Popup form -->
-    <div id="popupForm" class="popup-form">
-        <div class="popup-content">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <h2>Please answer the following questions:</h2>
-            <form id="questionsForm">
-                <label for="question1">Question 1:</label>
+<!-- Popup form -->
+<div id="popupForm" class="popup-form">
+    <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+          <h2>Step 1: Answer the following questions:</h2>
+            <form id="questionsForm" class="long-input">
+                <label for="question1">1. Where is the group travelling to?:</label>
                 <select id="question1">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="option1">Singapore</option>
+                    <option value="option2">Korea</option>
+                    <option value="option3">Japan</option>
                 </select>
 
-                <label for="question2">Question 2:</label>
-                <select id="question2">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
-
-                <label for="question3">Question 3:</label>
-                <select id="question3">
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select>
+                <label for="question2">2. What is the duration of travel? (min:1 day, max:15days): <label>
+                <input type="number" id="question2" min="1" max="15"> days
+                
+                <label for="question3">2. How many people in the group? (min:2 pax, max: 6pax): <label>
+                <input type="number" id="question3" min="2" max="6"> pax
 
                 <button type="button" onclick="submitAnswers()">Submit</button>
             </form>

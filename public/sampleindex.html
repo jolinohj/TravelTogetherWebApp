@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Recommendations</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Travel Recommendations</h1>
+    <form id="travel-form">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br>
+        
+        <label for="duration">Duration (days):</label>
+        <input type="number" id="duration" name="duration" required><br>
+        
+        <label for="group-size">Group Size:</label>
+        <input type="number" id="group-size" name="group-size" required><br>
+        
+        <button type="submit">Get Recommendations</button>
+    </form>
+    <div id="recommendations">
+        <!-- Recommendations will be displayed here -->
+    </div>
+</body>
+</html>
